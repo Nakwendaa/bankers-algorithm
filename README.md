@@ -1,6 +1,6 @@
 # bankers-algorithm
 
-## Description du programme
+## Description
 
 Implementation in C of the banker's algorithm, an algorithm that allows to manage the allocation of different types of resources, while avoiding deadlocks.
 
@@ -10,13 +10,13 @@ On the one hand, the server application is similar to an operating system that m
 
 On the other hand, the client application simulates the activity of several clients in different threads. These clients can request resources if they are available or release resources they currently hold.
 
-## Protocole client-serveur
+## Client-server protocol
 
 The communication protocol between the client and the server consists of commands and responses, each of which is a line of text in utf-8 format (and terminated by the ASCII character 10, line feed).
 
 The protocol is managed by the client that makes requests to the server. The server responses are always either ACK or ERR.
 
-### Requêtes du client
+### Client's requests
 
 BEG nb_resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configures the number of resources  
 PRO rsc0 rsc1...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides resources  
@@ -26,7 +26,7 @@ INI max0 max1 ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 REQ rsc0 rsc1 ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request for resources  
 CLO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Announces the end of the customer  
 
-### Réponses du serveur 
+### Server responses
 
 ACK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order successfully executed  
 ERR *msg*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invalid command, *msg* explains why
