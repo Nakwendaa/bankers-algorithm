@@ -28,7 +28,7 @@ CLO                                 Announces the end of the customer
 
 ### Réponses du serveur 
 
-ACK                 Order successfully executed
+ACK                 Order successfully executed  
 ERR *msg*       Invalid command, msg explains why
 
 ## Usage
