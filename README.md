@@ -40,7 +40,7 @@ In the first window, run the server with:
 Example: ``./tp2_server 14648 7``
 
 
-Then immediately In the second window, run the clients with the following command:&nbsp;
+Then immediately In the second window, run the clients with the following command:  
 ```./tp2_client <port-nb> <nb-clients> <nb-requests> <resources>```
 
 Example: ``./tp2_client 14648 45 39 45``
