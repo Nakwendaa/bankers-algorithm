@@ -18,13 +18,13 @@ The protocol is managed by the client that makes requests to the server. The ser
 
 ### Requêtes du client
 
-BEG nb_resources          Configures the number of resources
-PRO rsc0 rsc1...              Provides resources
-END                                 Ends server execution
+BEG nb_resources          Configures the number of resources  
+PRO rsc0 rsc1...              Provides resources  
+END                                 Ends server execution  
 
-INI max0 max1 ...            Customer ad with maximum usage
-REQ rsc0 rsc1 ...             Request for resources
-CLO                                 Announces the end of the customer
+INI max0 max1 ...            Customer ad with maximum usage  
+REQ rsc0 rsc1 ...             Request for resources  
+CLO                                 Announces the end of the customer  
 
 ### Réponses du serveur 
 
@@ -34,15 +34,12 @@ ERR *msg*       Invalid command, msg explains why
 ## Usage
 
 Open two terminal windows side by side in the folder bankers-algorithm. Then do ``cd build`` in each window.
-In the first window, run the server with:
-``tp2_server <port-nb> <nb-threads>``
-
-Example: ``./tp2_server 14648 7``
-
+In the first window, run the server with:  
+``tp2_server <port-nb> <nb-threads>``  
+Example: ``./tp2_server 14648 7``  
 
 Then immediately In the second window, run the clients with the following command:  
-```./tp2_client <port-nb> <nb-clients> <nb-requests> <resources>```
-
+```./tp2_client <port-nb> <nb-clients> <nb-requests> <resources>```  
 Example: ``./tp2_client 14648 45 39 45``
 
 ## License
