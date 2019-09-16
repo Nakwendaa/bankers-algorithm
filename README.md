@@ -28,8 +28,8 @@ CLO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 
 ### Réponses du serveur 
 
-ACK                 Order successfully executed  
-ERR *msg*       Invalid command, msg explains why
+ACK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order successfully executed  
+ERR *msg*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invalid command, msg explains why
 
 ## Usage
 
